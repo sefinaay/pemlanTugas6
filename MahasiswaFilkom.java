@@ -14,6 +14,24 @@ public class MahasiswaFilkom extends Manusia {
         this.ipk = ipk;
     }
 
+    //method getter dan setter untuk mengakses dan mengubah nilai dari atribut kelas 
+    public String getNim(){
+        return nim;
+    }
+
+    public void setNim(String nim){
+        this.nim = nim;
+    }
+
+    public double getIpk(){
+        return ipk;
+    }
+
+    public void setIpk(double ipk){
+        this.ipk = ipk;
+    }
+
+
     //method untuk menentuka status prodi dan angkatan berdasarkan NIM 
     public String getStatus(){
         String angkatan = "20" + nim.substring(0, 2);   //mengambil 2 digit pertama dari NIM untuk tahun angkatan mahasiswa
