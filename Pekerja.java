@@ -11,18 +11,37 @@ public class Pekerja extends Manusia {
     private LocalDate tahunMasuk;
     private int jumlahAnak;
 
-    //konstruktor dengan parameter tambahan untuk atribut pekeraj
+    //konstruktor dengan parameter tambahan untuk atribut pekerja
     public Pekerja(double gaji, int tahun, int bulan, int tanggal, int jumlahAnak, String nama, String nik, boolean jenisKelamin, boolean menikah) {
         super(nama, nik, jenisKelamin, menikah);        //memanggil konstruktor dari kelas induk Manusia
         this.gaji = gaji;
-        this.tahunMasuk = LocalDate.of(tahun, bulan, tanggal
-        );     //membuat objek dari parameter tahun, bulan, tanggal
+        this.tahunMasuk = LocalDate.of(tahun, bulan, tanggal);     //membuat objek dari parameter tahun, bulan, tanggal
         this.jumlahAnak = jumlahAnak;
     }
 
-    //method getter untuk gaji 
+    //method getter dan setter untuk mengakses dan mengubah nilai dari atribut kelas 
     public double getGaji() {
         return gaji;
+    }
+
+    public void setGaji(double gaji) {
+        this.gaji = gaji;
+    }
+
+    public LocalDate getTahunMasuk() {
+        return tahunMasuk;
+    }
+
+    public void setTahunMasuk(LocalDate tahunMasuk) {
+        this.tahunMasuk = tahunMasuk;
+    }
+
+    public int getJumlahAnak() {
+        return jumlahAnak;
+    }
+
+    public void setJumlahAnak(int jumlahAnak) {
+        this.jumlahAnak = jumlahAnak;
     }
 
     //method untuk menghitung bonus pekerja berdasarkan lama kerja
