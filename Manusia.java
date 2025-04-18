@@ -16,7 +16,40 @@ public class Manusia {
         this.jenisKelamin = jenisKelamin;
         this.menikah = menikah;
     }
-    
+
+    //method getter dan setter untuk mengakses dan mengubah nilai dari atribut kelas 
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNik(){
+        return nik;
+    }
+
+    public void setNik(String nik) {
+        this.nik = nik;
+    }
+
+    public boolean isJenisKelamin() {
+        return jenisKelamin;
+    }
+
+    public void setJenisKelamin(boolean jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public boolean isMenikah(){
+        return menikah;
+    }
+
+    public void setMenikah(boolean menikah){
+        this.menikah = menikah;
+    }
+
     //method untuk menghitung tunjangan yang didapatkan berdasarkan status menikah dan jenis kelamin
     public double getTunjangan() {
         if (menikah) {
